@@ -1,11 +1,10 @@
 const fs = require('fs');
-const path = require('path');
 
 const data = require('./entries.json');
 
 const write = () => {
 	const output = JSON.stringify(data);
-	fs.writeFile("entries.json", output, 'utf8', function (err) {
+	fs.writeFile("./entries.json", output, 'utf8', function (err) {
 		if (err) {
 			console.log("An error occured while writing JSON Object to File.");
 			return console.log(err);

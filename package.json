@@ -2,12 +2,17 @@
   "name": "tempo",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
+    "input": "node src/input/input.js",
+    "start": "node src/site/buildspace.js"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "buildspace": "^0.1.0",
+    "haipa": "^2.0.1"
+  }
 }

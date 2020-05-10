@@ -1,6 +1,6 @@
-const options = require('./options');
+const options = require('../options');
 const { firstChar } = require('./helpers');
-const entries = require('./entries');
+const entries = require('./entries/entries');
 
 const args = process.argv.slice(2);
 const channel = args.find(firstChar(options.syntax.channel)).slice(1);
